@@ -181,9 +181,12 @@ class BeautyToast{
     }
 
     settings({darkTheme, iconWidth, iconHeight, closeButton, timeout, animationTime}){
-        console.log(this.darkTheme)
         darkTheme != undefined && (this.darkTheme = darkTheme);
-        console.log(this.darkTheme)
+        iconWidth != undefined && (this.iconWidth = iconWidth);
+        iconHeight != undefined && (this.iconHeight = iconHeight);
+        closeButton != undefined && (this.closeButton = closeButton);
+        timeout != undefined && (this.timeout = timeout);
+        animationTime != undefined && (this.animationTime = animationTime);
     }
 }
 
