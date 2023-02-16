@@ -17,6 +17,16 @@
     --beautyToast-close-color: #121212;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
 .beautyToast-dark{
     --beautyToast-bg-color: #464646;
     --beautyToast-text-color: #D7D7D7;

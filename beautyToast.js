@@ -1,19 +1,16 @@
 class BeautyToast{
     constructor(){
-        this.checkAndAddToastWrapper = new Promise((resolve, reject) => {
-            if($(".beautyToast-wrapper").length == 0){
-                $("body").append('<div class="beautyToast-wrapper"></div>');
-                resolve('BeautyToast Wrapper has been Created!');
-            }else{
-                resolve('BeautyToast Wrapper has been Created!');
-            }
-        });
+        this.darkTheme = false;
+        this.iconWidth = null;
+        this.iconHeight = null;
+        this.closeButton = true;
+        this.timeout =  2500;
+        this.animationTime = 150;
     }
 
     success({
         title = 'Success',
         id = null,
-        darkTheme = false,
         message,
         icon = null,
         zIndex = 100,
@@ -23,11 +20,12 @@ class BeautyToast{
         progressBarColor = null,
         topbarColor = null,
         iconColor = null,
-        iconWidth = null,
-        iconHeight = null,
-        closeButton = true,
-        timeout =  2500,
-        animationTime = 150,
+        darkTheme = this.darkTheme,
+        iconWidth = this.iconWidth,
+        iconHeight = this.iconHeight,
+        closeButton = this.closeButton,
+        timeout =  this.timeout,
+        animationTime = this.animationTime,
         onClose = null,
         onOpen = null,
     } = {})
@@ -43,7 +41,6 @@ class BeautyToast{
     error({
         title = 'Error',
         id = null,
-        darkTheme = false,
         message,
         icon = null,
         zIndex = 100,
@@ -53,11 +50,12 @@ class BeautyToast{
         progressBarColor = null,
         topbarColor = null,
         iconColor = null,
-        iconWidth = null,
-        iconHeight = null,
-        closeButton = true,
-        timeout =  2500,
-        animationTime = 150,
+        darkTheme = this.darkTheme,
+        iconWidth = this.iconWidth,
+        iconHeight = this.iconHeight,
+        closeButton = this.closeButton,
+        timeout =  this.timeout,
+        animationTime = this.animationTime,
         onClose = null,
         onOpen = null,
     } = {})
@@ -73,7 +71,6 @@ class BeautyToast{
     info({
         title = 'Info',
         id = null,
-        darkTheme = false,
         message,
         icon = null,
         zIndex = 100,
@@ -83,11 +80,12 @@ class BeautyToast{
         progressBarColor = null,
         topbarColor = null,
         iconColor = null,
-        iconWidth = null,
-        iconHeight = null,
-        closeButton = true,
-        timeout =  2500,
-        animationTime = 150,
+        darkTheme = this.darkTheme,
+        iconWidth = this.iconWidth,
+        iconHeight = this.iconHeight,
+        closeButton = this.closeButton,
+        timeout =  this.timeout,
+        animationTime = this.animationTime,
         onClose = null,
         onOpen = null,
     } = {})
@@ -104,7 +102,6 @@ class BeautyToast{
     warning({
         title = 'Warning',
         id = null,
-        darkTheme = false,
         message,
         icon = null,
         zIndex = 100,
@@ -114,11 +111,12 @@ class BeautyToast{
         progressBarColor = null,
         topbarColor = null,
         iconColor = null,
-        iconWidth = null,
-        iconHeight = null,
-        closeButton = true,
-        timeout =  2500,
-        animationTime = 150,
+        darkTheme = this.darkTheme,
+        iconWidth = this.iconWidth,
+        iconHeight = this.iconHeight,
+        closeButton = this.closeButton,
+        timeout =  this.timeout,
+        animationTime = this.animationTime,
         onClose = null,
         onOpen = null,
     } = {})
@@ -131,6 +129,15 @@ class BeautyToast{
             return toastId;
         });
     }
+
+    checkAndAddToastWrapper = new Promise((resolve, reject) => {
+        if($(".beautyToast-wrapper").length == 0){
+            $("body").append('<div class="beautyToast-wrapper"></div>');
+            resolve('BeautyToast Wrapper has been Created!');
+        }else{
+            resolve('BeautyToast Wrapper has been Created!');
+        }
+    });
 
     processToast = ({toast, toastId, zIndex, timeout, animationTime, onClose, onOpen}) => {
         new Promise((resolve, reject) => {
@@ -172,6 +179,12 @@ class BeautyToast{
             $(".beautyToast-wrapper").remove();
         }, 300);
     }
+
+    settings({darkTheme, iconWidth, iconHeight, closeButton, timeout, animationTime}){
+        console.log(this.darkTheme)
+        darkTheme != undefined && (this.darkTheme = darkTheme);
+        console.log(this.darkTheme)
+    }
 }
 
 const closeToast = (toastId, onClose) => {
@@ -190,6 +203,4 @@ const closeToast = (toastId, onClose) => {
     });
 }
 
-$(document).ready(function(){
-    globalThis.beautyToast = new BeautyToast();
-});
+globalThis.beautyToast = new BeautyToast();
