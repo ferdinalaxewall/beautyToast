@@ -136,7 +136,6 @@ class BeautyToast{
         new Promise((resolve, reject) => {
             $(".beautyToast-wrapper").attr('style', 'z-index: '+ zIndex + ' !important');
             $(".beautyToast-wrapper").append(toast);
-
             resolve(toastId);
         }).then(async (toastId) => {
             setTimeout(() => {
