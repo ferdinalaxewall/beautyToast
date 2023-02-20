@@ -140,6 +140,9 @@ button{
 }
 
 .beautyToast-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;

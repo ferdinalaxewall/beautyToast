@@ -118,6 +118,7 @@ beautyToast.success({title : 'Error',
 | darkTheme | false | boolean | Theme of the toast (false = ** Light Mode** and true = **Dark Mode**).
 | iconWidth | 31 | number | Width of the toast icon (the number will be convert to 'px').
 | iconHeight | 31 | number | Height of the toast icon (the number will be convert to 'px').
+| iconSize | 31 | number | Size of the custom toast icon (both of height and width, and the number will be convert to 'px').
 | closeButton | true | boolean | **true** = Show "x" button, and **false** = Hide "x" button. 
 | timeout | 2500 | number | Amount in milliseconds to close the toast.
 | animationTime | 150 | number | Amount in milliseconds to animate element inside the toast, when opening the toast.
