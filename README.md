@@ -6,9 +6,8 @@ beautyToast is a **Javascript Notification Plugin** that can be **customized** a
 
 ## Getting Started
 
- 1.  **Install JQuery**, you can download or use CDN **JQuery 3.x** or latest stable version to install in your project from the [JQuery Offical Website](https://releases.jquery.com/).
- 2. **Install beautyToast**, to use **beautyToast** you can download the package [here](https://github.com/ferdinalaxewall/beautyToast/archive/refs/tags/v1.0.0.0b.zip), or use a CDN.
- 3. If you don't use a CDN, first extract the **.zip** package file that was downloaded.
+ 1. **Install beautyToast**, to use **beautyToast** you can download the package [here](https://github.com/ferdinalaxewall/beautyToast/archive/refs/tags/v1.0.0.0b.zip), or use a CDN.
+ 2. If you don't use a CDN, first extract the **.zip** package file that was downloaded.
 
 ### Setup in your project
 
@@ -21,9 +20,8 @@ beautyToast is a **Javascript Notification Plugin** that can be **customized** a
     <link href="https://rawcdn.githack.com/ferdinalaxewall/beautyToast/v1.0.0.0b/beautyToast.min.css" rel="stylesheet" />
     ```
     
- 2. Include the **beautyToast Javascript** at the bottom of your page before the closing `</body>` tag and after the **JQuery Script**:
+ 2. Include the **beautyToast Javascript** at the bottom of your page before the closing `</body>` tag:
     ```xml
-    <script src="path/to/jquery.min.js"></script>
     <script src="path/to/beautyToast.min.js"></script>
     ```
     or if you're use a **CDN**:
