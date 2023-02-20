@@ -6,7 +6,7 @@ beautyToast is a **Javascript Notification Plugin** that can be **customized** a
 
 ## Getting Started
 
- 1. **Install beautyToast**, to use **beautyToast** you can download the package [here](https://github.com/ferdinalaxewall/beautyToast/archive/refs/tags/v1.0.0.0b.zip), or use a CDN.
+ 1. **Install beautyToast**, to use **beautyToast** you can download the package [here](https://github.com/ferdinalaxewall/beautyToast/archive/refs/tags/v1.0.0b.zip), or use a CDN.
  2. If you don't use a CDN, first extract the **.zip** package file that was downloaded.
 
 ### Setup in your project
@@ -17,7 +17,7 @@ beautyToast is a **Javascript Notification Plugin** that can be **customized** a
     ```
     or if you're use a **CDN**:
     ```xml 
-    <link href="https://rawcdn.githack.com/ferdinalaxewall/beautyToast/v1.0.0.0b/beautyToast.min.css" rel="stylesheet" />
+    <link href="https://rawcdn.githack.com/ferdinalaxewall/beautyToast/v1.0.0b/beautyToast.min.css" rel="stylesheet" />
     ```
     
  2. Include the **beautyToast Javascript** at the bottom of your page before the closing `</body>` tag:
@@ -26,7 +26,7 @@ beautyToast is a **Javascript Notification Plugin** that can be **customized** a
     ```
     or if you're use a **CDN**:
     ```xml 
-    <script src="https://rawcdn.githack.com/ferdinalaxewall/beautyToast/v1.0.0.0b/beautyToast.min.js"></script>
+    <script src="https://rawcdn.githack.com/ferdinalaxewall/beautyToast/v1.0.0b/beautyToast.min.js"></script>
     ```
     
 
