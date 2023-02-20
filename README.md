@@ -137,6 +137,7 @@ beautyToast.settings({
 	darkTheme: false,
 	iconWidth: 31,
 	iconHeight: 31,
+	iconSize: 31,
 	closeButton: true,
 	timeout: 2500,
 	animationTime: 150,
